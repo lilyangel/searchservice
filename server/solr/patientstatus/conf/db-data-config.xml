@@ -1,0 +1,14 @@
+<dataConfig>
+      <dataSource type="JdbcDataSource"
+                driver="com.mysql.jdbc.Driver"
+                url="jdbc:mysql://localhost:3306/forum"
+                user="root"
+                password="" /> 
+          <document>
+              <entity name="product" pk="qqchat" query="select time as 'id', QQID, content from qqChatLog;">
+                <field column="id" name="id" />
+                <field column="content" name="content" />
+                <field column="QQID" name="QQID" />
+              </entity>
+          </document>
+</dataConfig>
