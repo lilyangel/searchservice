@@ -1,0 +1,14 @@
+<dataConfig>
+      <dataSource type="JdbcDataSource"
+                driver="com.mysql.jdbc.Driver"
+                url="jdbc:mysql://localhost:3306/haalthy"
+                user="root"
+                password="" /> 
+          <document>
+              <entity name="product" pk="post" query="select PostID as 'id', body, Tags from post;">
+                <field column="id" name="id" />
+                <field column="body" name="body" />
+                <field column="Tags" name="Tags" />
+              </entity>
+          </document>
+</dataConfig>
